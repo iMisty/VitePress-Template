@@ -1,0 +1,40 @@
+/*Reset*/
+body,html,h1,h2,h3,p,li,ul,a,img,div{
+    margin: 0;
+    padding: 0;
+}
+div,li,a,p,img,ul{
+    display: block;
+}
+ul,li{
+    list-style-type: none;
+}
+li{
+    margin-right: -5px;
+}
+/*HTML*/
+.wrapper{
+    width: 60%;
+    margin: 0 auto;
+    height: 54px;
+}
+#subject ul{
+    margin-top: -40px;
+}
+#subject ul li{
+    width: 48px;
+    display: inline-block;
+    filter: brightness(0.4);
+    transition: 0.5s;
+}
+#subject ul li:hover{
+    filter: brightness(1);
+    width: 165px;
+    transition: 0.5s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+#subject ul li a img{
+    max-width: 165px;
+    max-height: 93px;
+}
