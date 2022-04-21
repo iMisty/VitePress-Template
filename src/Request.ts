@@ -4,12 +4,12 @@
  * @Author: Mirage
  * @Date: 2022-04-20 14:39:00
  * @LastEditors: Mirage
- * @LastEditTime: 2022-04-20 15:54:25
+ * @LastEditTime: 2022-04-21 18:11:54
  */
 import axios from 'axios';
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 
-interface RequestInterceptors {
+export interface RequestInterceptors {
   requestInterceptors?: (config: AxiosRequestConfig) => AxiosRequestConfig;
   // @ts-ignore
   requestInterceptorsCatch?: (error: any) => any;
@@ -19,7 +19,7 @@ interface RequestInterceptors {
   responseInterceptorsCatch?: (error: any) => any;
 }
 
-interface CustomRequestConfig extends AxiosRequestConfig {
+export interface CustomRequestConfig extends AxiosRequestConfig {
   interceptors?: RequestInterceptors;
 }
 
