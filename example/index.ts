@@ -3,11 +3,11 @@
  * @Version: 1.0
  * @Author: Mirage
  * @Date: 2022-04-21 18:10:39
- * @LastEditors: Mirage
- * @LastEditTime: 2022-04-21 18:16:39
+ * @LastEditors: Miya
+ * @LastEditTime: 2022-04-23 20:14:10
  */
 import Request from '../src/Request';
-import type{CustomRequestConfig} from '../src/Request';
+import type { CustomRequestConfig } from '../src/Request';
 
 // 发送请求方法
 interface ExtendsCustomRequestConfig<T> extends CustomRequestConfig {
@@ -27,7 +27,7 @@ interface ResponseBody<T> {
  * 实例化
  *
  */
- const request = new Request({
+const request = new Request({
   baseURL: '',
   timeout: 6000,
   interceptors: {
@@ -64,6 +64,7 @@ interface Req {
 interface Res {
   data: Array<any>;
 }
+
 const getJSONData = (data: Req) => {
   return RequestExample<Req, Res>({
     url: '/api',
