@@ -4,7 +4,7 @@
  * @Author: Mirage
  * @Date: 2022-04-25 10:48:51
  * @LastEditors: Mirage
- * @LastEditTime: 2022-04-25 10:50:55
+ * @LastEditTime: 2022-04-25 11:46:56
  */
 import axios from 'axios';
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
@@ -56,7 +56,7 @@ class Request {
     );
   }
 
-  public async request<T>(config: CustomRequestConfig): Promise<T | unknown> {
+  public async request<T>(config: CustomRequestConfig): Promise<T> {
     if (config.interceptors?.requestInterceptors) {
       config = config.interceptors.requestInterceptors(config);
     }
@@ -69,7 +69,7 @@ class Request {
         );
       }
       return setRequestData;
-    } catch (error) {
+    } catch (error: any) {
       console.log(error);
       return error;
     }
