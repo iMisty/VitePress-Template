@@ -1,28 +1,14 @@
 /*
- * @Description: Axios Encapsulation
+ * @Description: AJAX Service
  * @Version: 1.0
  * @Author: Mirage
- * @Date: 2022-04-20 14:39:00
+ * @Date: 2022-04-25 10:48:51
  * @LastEditors: Mirage
- * @LastEditTime: 2022-04-21 18:11:54
+ * @LastEditTime: 2022-04-25 10:50:55
  */
 import axios from 'axios';
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
-
-export interface RequestInterceptors {
-  requestInterceptors?: (config: AxiosRequestConfig) => AxiosRequestConfig;
-  // @ts-ignore
-  requestInterceptorsCatch?: (error: any) => any;
-
-  responseInterceptors?: <T = AxiosResponse>(config: T) => T;
-  // @ts-ignore
-  responseInterceptorsCatch?: (error: any) => any;
-}
-
-export interface CustomRequestConfig extends AxiosRequestConfig {
-  interceptors?: RequestInterceptors;
-}
-
+import type { RequestInterceptors, CustomRequestConfig } from './interface';
 class Request {
   // Axios Example
   public instance: AxiosInstance;

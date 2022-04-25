@@ -3,17 +3,13 @@
  * @Version: 1.0
  * @Author: Mirage
  * @Date: 2022-04-21 18:10:39
- * @LastEditors: Miya
- * @LastEditTime: 2022-04-23 20:14:10
+ * @LastEditors: Mirage
+ * @LastEditTime: 2022-04-25 10:52:07
  */
 import Request from '../src/Request';
-import type { CustomRequestConfig } from '../src/Request';
+import type { ExtendsCustomRequestConfig } from '../src/interface';
 
 // 发送请求方法
-interface ExtendsCustomRequestConfig<T> extends CustomRequestConfig {
-  data?: T;
-  params?: T;
-}
 
 // 接收请求方法
 interface ResponseBody<T> {

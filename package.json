@@ -1,8 +1,8 @@
 {
   "name": "kagura-axios-request",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "AJAX Request Setting base on Axios",
-  "main": "./lib/Request.js",
+  "main": "./lib/index.js",
   "files": [
     "package.json",
     "lib"
