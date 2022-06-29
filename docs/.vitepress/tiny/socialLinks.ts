@@ -4,7 +4,7 @@
  * @Author: Mirage
  * @Date: 2022-06-28 17:36:10
  * @LastEditors: Mirage
- * @LastEditTime: 2022-06-28 17:41:13
+ * @LastEditTime: 2022-06-29 15:32:37
  */
 
 /**
@@ -29,7 +29,7 @@ type SocialLinkIcon =
  *  This Config From Official Website
  *  You may define this option to show your social account links with icons in nav.
  */
-const socialLinks: SocialLink[] = [
+const socialLinks: Array<SocialLink> = [
   { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
   { icon: 'twitter', link: '...' },
   { icon: 'discord', link: '...' },
