@@ -1,10 +1,10 @@
 /*
- * @Description: Vuepress Config
+ * @Description: Vitepress Config
  * @Version: 1.0
  * @Author: Mirage
  * @Date: 2022-06-28 17:03:27
  * @LastEditors: Miya
- * @LastEditTime: 2022-09-05 21:45:02
+ * @LastEditTime: 2022-09-05 22:20:08
  */
 import { defineConfig } from 'vitepress';
 // https://vitepress.vuejs.org/config/theme-configs.html#nav
